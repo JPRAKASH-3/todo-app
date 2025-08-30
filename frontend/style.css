@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 40px;
+  color: #333;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  font-size: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+li {
+  background: #fff;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li button {
+  margin-left: 6px;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.edit-btn {
+  background: #007bff;
+}
+
+.edit-btn:hover {
+  background: #0069d9;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
